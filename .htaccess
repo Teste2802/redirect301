@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^atsemp\.com\.br [NC,OR]
+RewriteCond %{HTTP_HOST} ^www\.atsemp\.com\.br [NC]
+RewriteRule ^(.*)$ http://atsemp.com/$1 [R=301,L]
